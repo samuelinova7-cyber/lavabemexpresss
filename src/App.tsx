@@ -80,7 +80,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900 overflow-x-hidden">
       {/* Top Ticker Marquee */}
-      <div className="bg-primary text-white py-2 overflow-hidden whitespace-nowrap sticky top-0 z-[60]">
+      <div className="bg-primary text-white py-2 overflow-hidden whitespace-nowrap fixed top-0 left-0 right-0 z-[60]">
         <div className="animate-marquee inline-block">
           {[1,2,3,4].map(i => (
             <span key={i} className="mx-8 font-heading text-lg tracking-wider">
@@ -351,16 +351,13 @@ export default function App() {
                     <span className="text-3xl font-bold text-primary">{plan.price}</span>
                     <span className="text-slate-500 text-sm">{plan.unit}</span>
                   </div>
-                  <ul className="space-y-4 mb-10">
+                  <ul className="space-y-4">
                     {plan.features.map((f, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-sm text-slate-600 font-medium">
                         <CheckCircle2 size={16} className="text-primary" /> {f}
                       </li>
                     ))}
                   </ul>
-                  <button className={`w-full py-4 rounded-2xl font-bold text-sm tracking-widest uppercase transition-all ${plan.highlight ? 'bg-primary text-white hover:bg-primary/90' : 'bg-[#0f172a] text-white hover:bg-slate-800'}`}>
-                    <a href={CONTENT.links.whatsapp} target="_blank" rel="noreferrer" className="block w-full h-full">Comprar Agora</a>
-                  </button>
                 </div>
               ))}
             </div>
