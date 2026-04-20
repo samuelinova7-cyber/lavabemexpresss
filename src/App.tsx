@@ -148,7 +148,7 @@ export default function App() {
                 <span className="text-primary italic">PRATICIDADE, CUIDADO E QUALIDADE EXCLUSIVA</span>
               </h2>
               <p className="text-lg text-slate-600 mb-10 max-w-xl leading-relaxed">
-                Na LavaBem Express você tem o cuidado que suas roupas merecem. Límpas, secas e perfumadas com OMO e Comfort em até 75 minutos.
+                Na LavaBem Express você tem o cuidado que suas roupas merecem. Limpas, secas e perfumadas com OMO e Comfort em até 75 minutos.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button onClick={() => scrollTo('valores')} className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-primary/90 transition-all uppercase tracking-wide">
